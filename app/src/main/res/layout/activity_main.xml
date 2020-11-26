@@ -6,16 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity">
 
-    <Button
-        android:id="@+id/button_chamar_api"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chamar API"/>
-
     <FrameLayout
         android:id="@+id/frame_fragments"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light"
+        android:layout_above="@id/bottom_navigation_view"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_view"
