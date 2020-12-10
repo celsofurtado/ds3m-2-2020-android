@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment"
     android:background="@android:color/holo_purple">
 
+    <include layout="@layout/toolbar"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycler_view_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:listitem="@layout/post_layout"/>
+        tools:listitem="@layout/post_layout"
+        android:layout_below="@+id/toolbar"/>
 
-</FrameLayout>
+</RelativeLayout>

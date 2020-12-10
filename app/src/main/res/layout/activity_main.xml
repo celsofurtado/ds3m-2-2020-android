@@ -10,7 +10,6 @@
         android:id="@+id/frame_fragments"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/holo_red_light"
         android:layout_above="@id/bottom_navigation_view"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
